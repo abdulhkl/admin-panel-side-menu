@@ -1,0 +1,11 @@
+.sidebar {
+	width: 260px;
+	flex-shrink: 0;
+	background-color: #080925;
+	height: 100%;
+	overflow: auto;
+}
+
+.sidebar > .sidebar-item > .sidebar-title {
+	background-color: #63a1da;
+}

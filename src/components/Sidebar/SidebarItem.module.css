@@ -1,0 +1,41 @@
+.sidebar-item {
+	display: block;
+	transition: background-color 0.15s;
+}
+
+.sidebar-title {
+	background-color: #63a1da;
+	font-weight: 700;
+}
+
+.sidebar-content .sidebar-title {
+	background-color: transparent;
+	font-weight: 400;
+}
+
+.sidebar-title {
+	display: flex;
+	font-size: 1.2em;
+	justify-content: space-between;
+	padding: 10px 10px 10px 15px;
+}
+
+.sidebar-title span i {
+	display: inline-block;
+	width: 1.5em;
+}
+.sidebar-title .toggle-btn {
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn {
+	transform: rotate(180deg);
+}
+.sidebar-content {
+	margin: 10px 0 10px 20px;
+	display: none;
+	border-left: 1px solid #44495f;
+}
+.sidebar-item.open > .sidebar-content {
+	display: block;
+}
